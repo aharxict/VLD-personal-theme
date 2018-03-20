@@ -1,0 +1,1 @@
+	<!-- IF member_online -->{lang:"core","userinfo_online"}<!-- ENDIF -->

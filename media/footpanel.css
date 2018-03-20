@@ -1,0 +1,366 @@
+#footpanel {
+	position: fixed;
+	bottom: 0px;
+	right: 35px;
+	z-index: 99995;
+	border-bottom: none; }
+
+*html #footpanel {
+	margin-top: -1px;
+	position: absolute;
+	top:expression(eval(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight)); }
+
+#chatsndnotifyholder {
+	height: 0;
+	width: 0; }
+
+#footpanel ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 11px; }
+
+	#footpanel ul li.chatpanel {
+		background: #e3e2e2  repeat-x;
+		border-top: 1px solid #999999;
+		padding: 0;
+		margin: 0;
+		height: 26px;
+		float: right;
+		position: relative; }
+
+		#footpanel ul li.first {
+			border-right: 1px solid #999999; }
+
+		#footpanel ul li.last {
+			border-left: 1px solid #999999; }
+
+		#footpanel ul li span.flag {
+			width: 16px;
+			height: 16px;
+			background: url('footpanel/flag.png') no-repeat center center;
+			display: block;
+			top: -8px;
+			right: 4px;
+			font-size: 9px;
+			line-height: 16px;
+			text-align: center;
+			font-family: arial;
+			color: #ffffff;
+			position: absolute; }
+
+		#footpanel a.button {
+			outline: none;
+			padding: 5px;
+			float: left;
+			text-indent: -9999px;
+			height: 16px;
+			width: 16px;
+			text-decoration: none;
+			color: #333;
+			position: relative; }
+
+			#footpanel ul li a.button:hover {
+				background-color: #fff;
+				border-left: 1px solid #fff; }
+
+			#footpanel ul li a.button-active {
+				background-color: #fff;
+				height: 17px;
+                                margin-top:-2px;
+				border-top: none;
+				z-index: 200;
+				position: relative; }
+
+				#footpanel ul li a.button-active:hover {
+					border-left: 1px solid #555; }
+
+					#footpanel a.im {
+						background: url('footpanel/user.png') no-repeat 5px center;
+						width: 110px;
+						border-left: 1px solid #e3e2e2;
+						border-right: 1px solid #999999;
+						padding-left:0;
+						text-indent: 0; 
+            text-align:right;
+            }
+
+					#footpanel a.chat {
+					
+						width: 110px;
+						border-left: 1px solid #e3e2e2;
+						border-right: 1px solid #999999;
+					
+						text-indent: 0; }
+
+						#footpanel a.chat span.online {
+							display: block;
+							background: url('footpanel/user-online.png') no-repeat right center; }
+
+						#footpanel a.chat span.invisible {
+							display: block;
+							background: url('footpanel/user-offline.png') no-repeat right center; }
+
+					#footpanel a.alerts {
+                                                text-indent:0;
+                                                font-size:14px;
+                                                padding-top:3px;
+						text-align:center;
+						border-left: 1px solid #e3e2e2;
+						border-right: 1px solid #999999; }
+
+						#footpanel a.alerts-new {
+                                                    color:orange;
+                                                }
+
+					#footpanel a.settings {
+						text-indent:0;
+                                                padding-top: 3px;
+                                                text-align: center;
+                                                font-size:14px;
+						border-left: 1px solid #e3e2e2;
+						border-right: 1px solid #e3e2e2; }
+
+#footpanel .subpanel {
+	position: absolute;
+	right: 0;
+	bottom: 27px;
+	display: none;
+	width: 196px;
+	border: 1px solid #555;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 1px; }
+
+	#footpanel .subpanel h3 {
+		padding: 0px 4px 0px 8px;
+
+		font-size: 11px;
+		height: 22px;
+                   margin:0;
+    
+		line-height: 22px;
+		cursor: pointer; }
+
+		#footpanel .subpanel h3 span {
+			display: block;
+			float: right;
+			margin: 4px 0px 5px 0px;
+			width: 13px;
+			height: 13px; }
+
+			#footpanel .subpanel h3 span.miminize {
+				background: url('footpanel/panel-actions.png') no-repeat -13px 0px; }
+
+				#footpanel .subpanel h3 span.miminize:hover {
+					background: url('footpanel/panel-actions.png') no-repeat -13px -13px; }
+
+			#footpanel .subpanel h3 span.close {
+				background: url('footpanel/panel-actions.png') no-repeat; }
+
+				#footpanel .subpanel h3 span.close:hover {
+					background: url('footpanel/panel-actions.png') no-repeat 0px -13px; }
+
+	#footpanel .subpanel .info {
+		background: #eeeeee;
+		padding: 3px 4px;
+		border-bottom: 1px solid #cccccc; }
+
+		#footpanel .subpanel .info a {
+			color: #333333; }
+
+	#footpanel .subpanel ul {
+		padding: 0;
+		margin: 0;
+		background: #fff;
+		width: 100%;
+		overflow: auto; }
+
+		#footpanel .subpanel li {
+			float: none;
+			display: block;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			clear: both;
+			background: #fff;
+			position: static;
+			font-size: 11px; }
+
+#footpanel #settingspanel .subpanel {
+	left: auto; }
+
+	#footpanel #settingspanel .subpanel .wrap {
+		padding: 0px 6px; }
+
+		#footpanel #settingspanel .status {
+			padding: 8px 0px;
+			line-height: 16px;
+			height: 16px; }
+
+			#footpanel #settingspanel .status span {
+				padding-right: 4px;
+				font-weight: bold;
+				line-height: 16px;
+				float: left;
+				display: block; }
+
+			#footpanel #settingspanel .status a {
+				float: left;
+				color: #333333;
+				padding-left: 20px;
+				height: 16px;
+				line-height: 16px;
+				text-decoration: none;
+				display: block; }
+
+				#footpanel #settingspanel .status a:hover {
+					text-decoration: underline; }
+
+				#footpanel #settingspanel .status a.online {
+					margin-right: 4px;
+					background: url('footpanel/status-online.png') no-repeat 0px center; }
+
+				#footpanel #settingspanel .status a.invisible {
+					background: url('footpanel/status-invisible.png') no-repeat 0px center; }
+
+				#footpanel #settingspanel .status a.active {
+					text-decoration: underline; }
+
+		#footpanel #settingspanel .sound {
+			padding: 5px 0px 5px 2px;
+			border-top: 1px solid #f0f0f0; }
+
+			#footpanel #settingspanel .sound a {
+				line-height: 16px;
+				height: 16px;
+				padding-left: 22px;
+				color: #333333;
+				text-decoration: none;
+				display: block; }
+
+				#footpanel #settingspanel .sound a:hover {
+					text-decoration: none; }
+
+				#footpanel #settingspanel .sound a.on {
+					background: url('footpanel/sound-on.png') no-repeat 0px center; }
+
+				#footpanel #settingspanel .sound a.off {
+					background: url('footpanel/sound-off.png') no-repeat 0px center; }
+
+#footpanel #chatpanel .subpanel {
+	left: 0;
+	width: 196px; }
+
+	#footpanel #chatpanel .subpanel .wrap {
+		max-height: 350px;
+		overflow: auto;
+		overflow-x: hidden; }
+
+	#footpanel #chatpanel .subpanel li {
+		background: url('footpanel/dash.gif') repeat-x left center; }
+
+		#footpanel #chatpanel .subpanel li span {
+			padding: 5px;
+			background: #fff;
+			color: #777;
+			float: left; }
+
+		#footpanel #chatpanel .subpanel li a {
+			padding: 3px 0;
+			margin: 0;
+			line-height: 22px;
+			height: 22px;
+			background: #fff;
+			display: block; }
+
+			#footpanel #chatpanel .subpanel li a.online {
+				background: #fff url('footpanel/user-online.png') no-repeat 100% center; }
+
+			#footpanel #chatpanel .subpanel li a.offline {
+				background: #fff url('footpanel/user-offline.png') no-repeat 100% center; }
+
+			#footpanel #chatpanel .subpanel li a:hover {
+				background-color: #ecf0f5;
+				text-decoration: none; }
+
+			#footpanel #chatpanel .subpanel li a img {
+				width: 22px;
+				float: left;
+				margin: 0 5px; }
+
+#footpanel #alertpanel .subpanel {
+	left: -142px; }
+
+	#footpanel #alertpanel .subpanel .wrap {
+		max-height: 350px;
+		overflow: auto;
+		overflow-x: hidden; }
+
+	#footpanel #alertpanel .subpanel li {
+		border-top: 1px solid #f0f0f0;
+		display: block; }
+
+		#footpanel #alertpanel .subpanel li.new {
+			background: #FFFFE1; }
+
+		#footpanel #alertpanel .subpanel li p {
+			margin: 0px;
+			padding: 5px 10px; }
+
+			#footpanel #alertpanel .subpanel li p span {
+				color: #999999; }
+
+			#footpanel #alertpanel .subpanel li a.delete {
+				background: url('footpanel/notify-delete.gif') no-repeat;
+				float: right;
+				width: 13px;
+				height: 14px;
+				margin: 5px;
+				text-indent: -9999px;
+				visibility: hidden; }
+
+				#footpanel #alertpanel .subpanel li a.delete:hover {
+					background-position: left bottom; }
+
+#footpanel .impanel .subpanel {
+	padding-bottom: 0px;
+	width: 230px; }
+
+#footpanel .impanel .wrap {
+    overflow: auto;
+    height: 250px;
+    border-bottom: 1px solid #cccccc;
+    overflow-x: hidden;
+	padding: 4px 8px 4px 6px; }
+
+	#footpanel .impanel .chatmessages { }
+
+		#footpanel .impanel .chatmessages li {
+			padding: 0px;
+			margin: 0px;
+			background: #FFFFFF;
+			font: 11px/16px arial, verdana, sans-serif;
+			color: #808080; }
+
+			#footpanel .impanel .chatmessages span.name {
+				font-weight: bold;
+				color: #000000; }
+
+	#footpanel .impanel .chatsend {
+		padding: 2px 0px; }
+
+		#footpanel .impanel .chatsend input.text {
+			background: url('footpanel/im.png') no-repeat 2px center;
+			margin-left: 2px;
+			padding-left: 20px;
+			width: 195px;
+			border: 0px; }
+
+
+
+#footpanel * {
+  box-sizing:initial;
+  -webkit-box-sizing:initial;
+  -moz-box-sizing:initial;
+}

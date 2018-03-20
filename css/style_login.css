@@ -1,0 +1,459 @@
+
+#conv_holder {
+  display:none;
+  background:#222;
+}
+.mfp-content #conv_holder {
+  display:block;
+}
+
+
+#conv_members , #conv_messages{
+     height:500px;
+}
+
+.conv-height-big #conv_members , .conv-height-big  #conv_messages {
+  height:700px;
+}
+
+#conv_header {
+    background:#333;
+}
+
+#conv_holder #conv {
+   background:#222;
+   min-height:500px;
+}
+
+
+
+#conv_header {
+    background:#333;
+}
+
+
+#conv_members {
+	background: transparent;
+	padding-right: 0px;
+}
+#conv_members ul {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+#conv_members ul li .item {
+	padding: 0px 15px;
+}
+#conv_members ul li {
+	padding: 5px 0px;
+	overflow: hidden;
+	border-bottom: 1px solid #444;
+	list-style-type: none;
+        cursor:pointer;
+}
+
+#conv_members ul li.active {
+    background:#444;
+}
+
+#conv_members img {
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+}
+#conv_members h4 {
+	color: #fff;
+	font-size: 16px;
+	text-align: right;
+}
+#conv_members .stamp {
+	color: #8baae1;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+
+/*Messages*/
+
+#conv_messages {
+    background:#eee;
+}
+
+#conv_messages.convmsg{
+	overflow: hidden;
+	margin-bottom: 80px;
+}
+#conv_messages .convmsgbody {
+	background: #fff;
+        min-height:50px;
+	padding: 10px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+
+#conv_messages .convmsgbody {
+	position: relative;
+}
+
+#conv_header {
+    height:50px;
+    padding:10px;
+}
+
+#conv_header .form-control {
+    height:25px;
+    margin-right:15px;
+}
+
+#conv_members , #conv_messages {
+    overflow:auto;
+    position:relative;
+}
+
+#conv_write {
+    border-top:1px solid #eee;
+    padding:15px 0;
+    background:#ddd;
+    height:100px;
+}
+
+#conv_write , #conv_messages_inner {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#conv_messages_inner {
+   bottom:100px;
+   top:0;
+   overflow:auto;
+}
+
+.convmsg {
+    margin:40px 0;
+    font-size:small;
+}
+
+
+.convmsg .img-circle {
+    max-width:50px;
+    margin-top:10px;
+}
+
+.convmsg.right .convimgdiv a {
+    float:right;
+}
+
+
+
+#conv_member_list .name {
+  margin-top:5px;
+}
+
+
+.msg_count , .vt_cnt {
+  background:red;
+  color:#fff;
+  border-radius:50%;
+  width:15px;
+  text-align:center;
+  position:absolute;
+  top:5px;
+  right:0;
+  font-size:10px;
+  line-height:15px;
+  z-index:999;
+}
+
+
+@media(max-width:767px) {
+    
+    .convmsg {
+       margin:15px 0; 
+    }
+    
+    #conv_holder {
+        position:fixed;
+        left:0 !important;
+        right:0 !important;
+        top:0;
+        bottom: 0 !important;
+        z-index:1050;
+    }
+    
+    
+    .conv-open #conv_holder {
+      display:block;
+    }
+    
+    #conv_header .form-control {
+        width:80px;
+        float:left;
+    }
+    
+    #conv_messages {
+        position: fixed !important;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:auto !important;
+    }
+    
+    .msg_count , .vt_cnt {
+      margin-top:-10px;
+      margin-left:0px;
+    }
+    
+    #conv_messages_list {
+      padding:28px 0;
+    }
+    
+    
+}
+
+
+.convpartner .status {
+  display:none;
+}
+.convpartner.new .status {
+  display:inline-block;
+}
+
+#conv_none {
+    font-size:24px;
+    text-align:center;
+    color:#aaa;
+    padding:80px 0;
+}
+
+#conv_none .glyphicon-user {
+    font-size:128px;
+    margin-top:15px;
+}
+
+#conv_none .glyphicon-comment {
+    font-size:48px;
+    position:relative;
+    left:-20px;
+    top:15px;
+}
+
+#conv .loader {
+    display:inline-block;
+    margin-top:50px;
+}
+
+#conv_option_button {
+    cursor:pointer;
+    margin:5px 0;
+    font-size:small;
+    color:#777;
+    position:absolute;
+    left:10px;
+    top:5px;
+    z-index:5;
+}
+
+.convme .cmarr {
+    position:absolute;
+    width:16px;
+    height:16px;
+    background: url('../media/convarr_right.png') no-repeat;
+    right:-12px;
+    bottom:0;
+}
+
+.convother .cmarr {
+    position:absolute;
+    width:16px;
+    height:16px;
+    background: url('../media/convarr_left.png') no-repeat;
+    left:-12px;
+    top:0;
+}
+
+
+.convactions {
+    color:#aaa;
+    font-size:10px;
+    cursor:pointer;
+}
+
+.convactions .glyphicon {
+    font-size:10px;
+}
+
+ .convaction_inner {
+     display:none;
+ }
+.convmsg:hover .convaction_inner {
+    display:block;
+    margin-top:10px;
+}
+
+
+
+#notificationContainer {
+    background-color: #fff;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 45px;
+    margin-left: -127px;
+    width: 300px;
+    margin-top:10px;
+    z-index: 20;
+    display: none; 
+
+}
+
+#notificationContainer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid black;
+    border-color: transparent transparent white;
+    margin-top: -20px;
+    margin-left: 150px;
+    z-index:99;
+}
+
+#notificationTitle {
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 13px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1000;
+    width:100%;
+    border-bottom: 1px solid #eee;
+}
+#notificationsBody{
+    padding: 33px 0px 0px 0px !important;
+    min-height:100px;
+    max-height:400px;
+    overflow:auto;
+}
+#notificationFooter {
+    background-color: #e9eaed;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #dddddd;
+}
+
+#topmsg {
+  margin:13px 10px 0 0;
+}
+
+.smilies_holder {
+  position:absolute;
+  right:10px;
+  top:5px; 
+  z-index:9;
+
+}
+
+.smiliesbox {
+  background:#fff;
+  padding:10px;
+  border-radius:5px;
+  box-shadow:0 0 5px #ccc;
+}
+
+#smilies_popup_box {
+  position:relative;
+  top:-25px;
+  right:10px;
+}
+
+
+
+.highlight {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffcc+100 */
+background: rgb(255,255,255) !important; /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,204,1) 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,204,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,204,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffcc',GradientType=1 ) !important; /* IE6-9 */
+
+}
+
+
+.topmembers {
+  background:#fff;
+  background:rgba(255,255,255,0.6);
+  border-bottom:1px solid #eee;
+  padding-top:20px;
+  padding-bottom:10px;
+  margin:-20px 0 30px 0;
+}
+
+.topmembers .img-responsive {
+  border-radius:50%;
+}
+
+.becomepromoted img {
+  border:3px solid #555;
+}
+
+.topmembers a:hover img {
+  border:1px solid #555;
+}
+
+
+
+.messageCheckbox {
+  margin-left:10px !important;
+}
+
+.convpartner .label {
+  font-size:10px;
+}
+
+.convpartner .label {
+  display:none;
+}
+.convpartner.new .label {
+  display:inline-block;
+}
+
+
+.msgtext {
+  margin:5px;
+}
+
+.rangeselect select {
+   width: auto;
+   display: inline-block;
+}
+
+.account_messages #footer {
+  display:none;
+}
+
+#cpda {
+  margin:0 0 15px 0;
+  position:absolute;
+  left:40%;
+  background:url(../images/cupid.png) no-repeat top left;
+  width:150px;
+  height:130px;
+}
+
+#cpda.switch {
+  background-position:-150px 0;
+}
+
+
